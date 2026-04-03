@@ -1,0 +1,161 @@
+/* Estilo general de la página */
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f4f6f9;
+}
+
+/* Encabezado */
+header{
+    background:#1f3c88;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    margin:0;
+}
+
+/* Menú */
+
+.menu{
+    background:#2c3e50;
+}
+
+.menu ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:center;
+}
+
+.menu li{
+    margin:0;
+}
+
+.menu a{
+    display:block;
+    padding:15px 25px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.menu a:hover{
+    background:#34495e;
+}
+
+.menu{
+    position:sticky;
+    top:0;
+}
+
+/* Contenedor de tarjetas */
+.container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    padding:40px;
+}
+
+/* Tarjetas de servicios */
+.card{
+    background:white;
+    width:220px;
+    padding:20px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Título de tarjeta */
+.card h2{
+    margin-top:0;
+}
+
+/* Botón */
+button{
+    margin-top:10px;
+    padding:10px 15px;
+    background:#3498db;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+/* Hover del botón */
+button:hover{
+    background:#2c80b4;
+}
+
+/* pie de página */
+
+.footer{
+    background:#1f2a38;
+    color:white;
+    margin-top:40px;
+}
+
+.footer-contenido{
+    display:flex;
+    justify-content:space-around;
+    padding:30px;
+    flex-wrap:wrap;
+}
+
+.footer-seccion{
+    width:200px;
+}
+
+.footer-seccion h3{
+    margin-top:0;
+}
+
+.footer-seccion a{
+    color:white;
+    text-decoration:none;
+}
+
+.footer-seccion a:hover{
+    text-decoration:underline;
+}
+
+.footer-bottom{
+    text-align:center;
+    background:#16202b;
+    padding:10px;
+    font-size:14px;
+}
+
+
+/* páginas */
+
+.pagina{
+    max-width:800px;
+    margin:60px auto;
+    background:white;
+    padding:40px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.pagina h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.pagina p{
+    line-height:1.6;
+    text-align:center;
+}
