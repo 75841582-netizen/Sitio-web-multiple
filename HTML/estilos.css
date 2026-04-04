@@ -1,8 +1,14 @@
 /* Estilo general de la página */
+html, body{
+    height:100%;
+}
+
 body{
     font-family: Arial, sans-serif;
     margin:0;
     background:#f4f6f9;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Encabezado */
@@ -101,41 +107,12 @@ button:hover{
 
 /* pie de página */
 
-.footer{
-    background:#1f2a38;
+footer{
+    background:#1f3c88;
     color:white;
-    margin-top:40px;
-}
-
-.footer-contenido{
-    display:flex;
-    justify-content:space-around;
-    padding:30px;
-    flex-wrap:wrap;
-}
-
-.footer-seccion{
-    width:200px;
-}
-
-.footer-seccion h3{
-    margin-top:0;
-}
-
-.footer-seccion a{
-    color:white;
-    text-decoration:none;
-}
-
-.footer-seccion a:hover{
-    text-decoration:underline;
-}
-
-.footer-bottom{
     text-align:center;
-    background:#16202b;
-    padding:10px;
-    font-size:14px;
+    padding:20px;
+    margin-top:auto;
 }
 
 
