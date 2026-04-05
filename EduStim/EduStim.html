@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+       <title>EduStim</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" type="image/png" href="img/logo.png">
+    </head>
+
+    <body>
+        <!--Encabezado-->
+        <header>
+            <img id="logo" src="img/logo1.png">
+            <nav>
+                <a href="EduStim.html" class="nav-link">Inicio</a>
+                <a href="actividades.html" class="nav-link">Actividades</a>
+                <a href="recursos.html" class="nav-link">Recursos</a>
+                <a href="testimonios.html" class="nav-link">Testimonios</a>
+                <a href="contacto.html" class="nav-link">Contacto</a>
+                <a href="inicio de sesion.html" class="nav-link">Registrarse</a>
+                <a href="inicio de sesion.html" class="nav-link">Iniciar Sesión</a>
+            </nav>
+        </header>
+        <!--Descripción-->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Bienvenido a EduStim</h1>
+                <p>Apoyamos el desarrollo emocional y cognitivo de los más pequeños.</p>
+                <a href="nosotros.html" class="btn">Conocer más</a>
+            </div>
+        </section>
+
+
+        <section class="intro">
+            <p>Descubre un mundo de actividades diseñadas para promover el desarrollo integral de los más pequeños, apoyando a padres y educadores en su viaje de aprendizaje.</p>
+        </section>
+        
+        <!--Tarjetas-->
+        <section class="tarjetas">
+            <div class="tarjeta">
+                <h2>Psicología</h2>
+                <img src="img/psicologia_ic.png" alt="Psicología">
+                <h5>Especialidad de apoyo psicologico para cualquier edad, contando con una asesoria de una Licenciada</h5>
+                <a href="ingreso.html?destino=psico" class="vermas">Ver más</a>
+            </div>
+            <div class="tarjeta">
+                <h2>Estimulación Temprana</h2>
+                <img src="img/estimulacion_ic.png" alt="Estimulacion">
+                <h5>Especialidad de asistencia temprana para niños desde sus primeros meses de vida, fortaleziendo sus habilidades cognitivas y motrices</h5>
+                <a href="ingreso.html?destino=estim" class="vermas">Ver más</a>
+            </div>
+        </section>
+
+        <!--Pie de página-->
+        <footer>
+            <h6>&copy; 2025 EduStim. Todos los derechos reservados</h6>
+        </footer>
+        <script type="module">
+    
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAlTDBCO55R18TEbRC347wTYjMNG8OeN_w",
+  authDomain: "proyecto-662b8.firebaseapp.com",
+  projectId: "proyecto-662b8",
+  storageBucket: "proyecto-662b8.firebasestorage.app",
+  messagingSenderId: "826510770740",
+  appId: "1:826510770740:web:befdd3620aebc7868c0061",
+  measurementId: "G-XB6ENVKR5J"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+console.log("Firebase conectado de forma correcta ...!!",app)
+    </script>
+
+    </body>
+</html>

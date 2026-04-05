@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduStim</title>
+    <link rel="stylesheet" href="css/Estimulacion.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+</head>
+<body>
+    <header>
+        <div>
+            <img id="logo" src="img/logo1.png">
+            <nav>
+                <a href="EduStim.html" class="nav-link">Inicio</a>
+                <a href="actividades.html" class="nav-link">Actividades</a>
+                <a href="recursos.html" class="nav-link">Recursos</a>
+                <a href="testimonios.html" class="nav-link">Testimonios</a>
+                <a href="contacto.html" class="nav-link">Contacto</a>
+            </nav>          
+        </div>
+    </header>
+
+    <div class="card">
+        <h2 id="titulo"></h2>
+    </div>
+
+    <section class="seccion">
+        <h2>Estimulación temprana:</h2>
+        <p>
+            La importancia de la estimulación temprana es tal que se considera un<br> 
+            requisito básico para el óptimo desarrollo del cerebro del bebé, ya que potencia<br> 
+            sus funciones cerebrales en todos los aspectos (cognitivo, lingüístico, motor y social)<br>
+
+            Nuestro cerebro requiere información que le ayude a desarrollarse. Su<br> 
+            crecimiento depende de la cantidad, tipo y calidad de estímulos que recibe; las<br> 
+            capacidades no se adquieren sólo con el paso del tiempo.<br>
+
+            El bebé precisa recibir estos estímulos a diario, desde el momento de su<br> 
+            nacimiento. Si recibe estímulos pobres, de una forma irregular o en cantidad<br> 
+            insuficiente, el cerebro no desarrolla adecuadamente sus capacidades al ritmo y<br> 
+            con la calidad que cabría esperar. Por otro lado, una estimulación temprana,<br> 
+            abundante, periódica y de buena calidad nos garantiza un ritmo adecuado en el<br> 
+            proceso de adquisición de distintas funciones cerebrales.
+        </p>
+        <img src="img/estimulacion.jpg">
+
+    </section>
+    <h2 id="titul">Recomendador de Estimulación</h2>
+
+    <div class="formulario">
+        <label>Edad del niño</label>
+        <select id="edadNino">
+            <option value="">Seleccionar</option>
+            <option value="0-2">0 a 2 años</option>
+            <option value="2-4">2 a 4 años</option>
+            <option value="4-6">4 a 6 años</option>
+        </select>
+
+        <label>Área de interés</label>
+        <select id="area">
+            <option value="">Seleccionar</option>
+            <option value="motricidad">Motricidad</option>
+            <option value="lenguaje">Lenguaje</option>
+            <option value="cognitivo">Cognitivo</option>
+            <option value="socioemocional">Socioemocional</option>
+        </select>
+
+        <button id="consultar">Consultar</button>
+    </div>
+
+    <!-- Resultado -->
+    <div id="resultado" style="display:none; margin-top:20px;">
+        <h3>Recomendación:</h3>
+        <p id="textoResultado"></p>
+
+        <a id="whatsapp" href="#" target="_blank">
+            <button>Agendar por WhatsApp</button>
+        </a>
+    </div>
+
+    <footer>
+        <h6>&copy; 2025 EduStim. Todos los derechos reservados</h6>
+    </footer>
+
+    <script src="js/interacction.js"></script>
+    <script src="js/estimTest.js"></script>
+
+
+</body>
+</html>

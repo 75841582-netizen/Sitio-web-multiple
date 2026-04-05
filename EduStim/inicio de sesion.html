@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Valido</title>
+    <link rel="stylesheet" href="css/iniciodesesion.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+</head>
+<body>
+    <form id="formulario" onsubmit="return validarFormulario()">
+        <h2>Registro</h2>
+        <input type="text" id="nombre" placeholder="Nombre" required>
+        <input type="email" id="email" placeholder="Correo" required>
+        <input type="password" id="password" placeholder="Contraseña" required>
+        <input type="password" id="confirmar" placeholder="confirmar contraseña" required>
+        <button type="submit">Registrarse</button>
+    </form>
+    <script src="js/iniciodesesion.js"></script>    
+</body>
+</html>

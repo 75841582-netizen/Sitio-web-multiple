@@ -1,0 +1,170 @@
+/*Estilo general*/
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #FAFAF7;
+}
+
+/*banner*/
+.hero {
+    height: 350px;
+    background-image:url("pexels-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    color: white;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #62fcec;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff90ab;
+}
+
+/*Encabezado*/
+header{
+    display: flex;
+    min-width: 70px;
+    background-color: #4A4A4A;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#logo{
+    width: 125px;
+}
+.logo{
+    display: flex;
+    color: #49a0c0;
+    margin: 0;
+    margin-left: 40px;
+    font-style: italic;
+}
+/*Menú*/
+a{
+    text-decoration: none;
+    color: #A7D8F0;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 30px;
+}
+
+nav a:hover{
+    color: #5BA7D1;
+}
+
+/*Adaptable*/
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+/*Descripción*/
+.intro{
+    text-align: center;
+    padding: 30px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/*Tarjetas*/
+.tarjetas{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin: 40px 0;
+}
+
+.tarjeta{
+    background-color: #A7D8F0;
+    border-radius: 15px;
+    box-shadow: 0 0 5px gray;
+    width: 300px;
+    text-align: center;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta h2{
+    color: #3399CC;
+}
+
+.tarjeta img {
+    width: 200px;
+    display: block;       
+    margin: 0 auto 15px;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/*Boton*/
+.vermas{
+    display: inline-block;
+    background-color: #5BA7D1;
+    color: #e91e63;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s;    
+}
+
+.vermas:hover{
+    background-color: #FF9F80;
+}
+
+/*Pie de página*/
+footer{
+    background-color: #4A4A4A;
+    color: gray;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}

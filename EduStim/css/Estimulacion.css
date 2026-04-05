@@ -1,0 +1,153 @@
+/*Estilo general*/
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #fafaf7;
+}
+
+/*Encabezado*/
+header{
+    display: flex;
+    min-width: 70px;
+    background-color: #4A4A4A;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#logo{
+    width: 125px;
+}
+
+/*Menú*/
+a{
+    text-decoration: none;
+    color: #A7D8F0;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 30px;
+}
+
+nav a:hover{
+    color: #5BA7D1;
+}
+
+/*Adaptable*/
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+/*Nombre de usuario*/
+.card{
+    background-color: #c8f7c5;
+    padding: 20px;
+    margin: 50px auto;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h2{
+    text-decoration: none;
+}
+
+/*Secciones*/
+.seccion{
+    background-color: #B9EAF5; /* Celeste bebé (igual que las tarjetas) */
+    padding: 20px;
+    margin: 40px auto;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.seccion h2{
+
+    text-decoration: none;
+    color: #3399CC; /* Azul suave, igual que los títulos de tarjeta */
+}
+
+/*Test*/
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    color: #333;
+}
+
+.formulario {
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #444;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #bbb;
+    font-size: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+#resultado {
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#textoResultado {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/*Pie de página*/
+footer{
+    background-color: #4A4A4A;
+    color: gray;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}

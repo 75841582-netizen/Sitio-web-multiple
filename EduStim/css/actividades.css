@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* encabezado */
+header{
+    display: flex;
+    min-width: 70px;
+    background-color: #4A4A4A;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header.scrolled {
+    background-color: #4A4A4A;
+    padding: 10px 40px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+
+#logo{
+    width: 125px;
+}
+
+a{
+    text-decoration: none;
+    color: #A7D8F0;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 30px;
+}
+
+nav a:hover{
+    color: #5BA7D1;
+}
+
+.hero {
+    height: 100vh;
+    background-image: url("../img/actividades.webp");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+    text-align: center;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 40px;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+.hero p {
+    color: white;
+    margin-top: 10px;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.btn-up {
+    width: 45px;
+    height: 45px;
+    background: #c3f3f3;
+    color: #000;
+    border-radius: 50%;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.btn-up.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+.btn-up {
+    width: 45px;
+    height: 45px;
+    background: #c3f3f3;
+    color: #000;
+    border-radius: 50%;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.btn-up.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* secciones */
+.bloque {
+    max-width: 1100px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.bloque h2 {
+    font-size: 32px;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+.subtitulo {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* tarjetas */
+.cards-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card img {
+    width: 280px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin-top: 10px;
+}
+
+.fecha {
+    font-size: 14px;
+    color: #777;
+}
+
+.sens-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.sens-card {
+    width: 300px;
+    text-align: center;
+}
+
+.sens-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.sens-card h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.sens-card p {
+    font-size: 14px;
+    color: #444;
+    margin-top: 8px;
+}
+
+/*Pie de página*/
+footer{
+    background-color: #4A4A4A;
+    color: gray;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}

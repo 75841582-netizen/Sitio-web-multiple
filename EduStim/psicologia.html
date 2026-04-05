@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduStim</title>
+    <link rel="stylesheet" href="css/Psicologiastyles.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+</head>
+<body>
+    <header>
+        <div>
+            <img id="logo" src="img/logo1.png">
+            <nav>
+                <a href="EduStim.html" class="nav-link">Inicio</a>
+                <a href="actividades.html" class="nav-link">Actividades</a>
+                <a href="recursos.html" class="nav-link">Recursos</a>
+                <a href="testimonios.html" class="nav-link">Testimonios</a>
+                <a href="contacto.html" class="nav-link">Contacto</a>
+            </nav>          
+        </div>
+    </header>
+    <div class="card">
+        <h2 id="titulo"></h2>
+    </div>
+
+    <section class="seccion">
+        <h2>Psicología Infantil:</h2>
+        <p>
+            Ayudamos a que los niños crezcan seguros, felices y emocionalmente fuertes. En psicología infantil trabajamos sus emociones, conducta y habilidades sociales, utilizando estrategias adecuadas a su edad. También brindamos orientación a los padres para mejorar la convivencia y apoyar el bienestar de toda la familia.
+        </p>
+        <img src="img/psicologia.jpg">
+    </section>
+
+        <!-- Descripción -->
+    <section class="intro">
+        <h2>Orientación Inicial en Psicología Infantil</h2>
+        <p>Responde estas preguntas para recibir una recomendación personalizada sobre la especialidad de psicología más adecuada.</p>
+    </section>
+
+    <section class="contenedor">
+        <h2>Cuestionario Inicial</h2>
+
+        <!-- P1 -->
+        <div class="pregunta">
+            <p>1. ¿Cómo se relaciona tu hijo con otros niños?</p>
+            <label><input type="radio" name="p1" value="infantil"> Se pelea o se aísla</label>
+            <label><input type="radio" name="p1" value="neuro"> Tiene dificultad para mantener la atención</label>
+            <label><input type="radio" name="p1" value="lenguaje"> No se comunica bien</label>
+        </div>
+
+        <!-- P2 -->
+        <div class="pregunta">
+            <p>2. ¿Tiene dificultades para seguir instrucciones?</p>
+            <label><input type="radio" name="p2" value="psicope"> Sí, seguido</label>
+            <label><input type="radio" name="p2" value="infantil"> A veces</label>
+        </div>
+
+        <!-- P3 -->
+        <div class="pregunta">
+            <p>3. ¿Presenta problemas en el habla o pronunciación?</p>
+            <label><input type="radio" name="p3" value="lenguaje"> Sí</label>
+            <label><input type="radio" name="p3" value="neuro"> No, pero tiene dificultad para recordar cosas</label>
+        </div>
+
+        <button id="consultar">Consultar Especialidad</button>
+
+    </section>
+
+    <!-- Resultado -->
+    <section id="resultado" class="resultado" style="display: none;">
+        <h2>Resultado de la Orientación</h2>
+        <p id="resultado-texto"></p>
+
+        <a href="#" class="btn" target="_blank">Agendar Cita</a>
+    </section>
+
+
+    <footer>
+        <h6>&copy; 2025 EduStim. Todos los derechos reservados</h6>
+    </footer>    
+
+    <!-- Script -->
+    <script src="js/psicoTest.js"></script>
+    <script src="js/interacction.js"></script>
+</body>
+</html>

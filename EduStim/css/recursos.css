@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    display: flex;
+    min-width: 70px;
+    background-color: #4A4A4A;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+#logo{
+    width: 125px;
+}
+
+a{
+    text-decoration: none;
+    color: #A7D8F0;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 30px;
+}
+
+nav a:hover{
+    color: #5BA7D1;
+}
+
+.header.scrolled {
+    background-color: #4A4A4A;
+    padding: 10px 40px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.btn-up {
+    width: 45px;
+    height: 45px;
+    background: #c3f3f3;
+    color: #000;
+    border-radius: 50%;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.btn-up.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.hero {
+    height: 100vh;
+    background-image: url("../img/recursos.avif");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    padding-top: 120px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.hero h1 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+.hero p {
+    color: white;
+}
+
+.blog {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 20px;
+}
+
+.blog h2 {
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.post {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.post img {
+    width: 260px;
+    border-radius: 8px;
+}
+
+.post-info h3 {
+    margin: 0 0 5px 0;
+}
+
+.fecha {
+    display: block;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.post-info a {
+    font-size: 14px;
+}
+
+hr {
+    margin: 40px 0;
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+}
+
+/*Pie de página*/
+footer{
+    background-color: #4A4A4A;
+    color: gray;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
