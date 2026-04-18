@@ -58,6 +58,24 @@ header h1{
     top:0;
 }
 
+/*Nombre de usuario*/
+#bienvenidaUsuario {
+    font-size: 28px;
+    font-weight: 600;
+    color: #051a5f;
+
+    margin: 20px 0;
+    padding: 15px 20px;
+
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(6px);
+
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+
+    text-align: center;
+}
+
 /* Contenedor de tarjetas */
 .container{
     display:flex;
