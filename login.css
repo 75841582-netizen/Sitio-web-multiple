@@ -1,0 +1,87 @@
+/* 🔹 Fondo general */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 🔹 Contenedor principal */
+.login-container {
+    width: 350px;
+    padding: 30px;
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: white;
+}
+
+/* 🔹 Título */
+.login-container h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* 🔹 Inputs */
+.login-container input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 15px;
+
+    border: none;
+    border-radius: 10px;
+    outline: none;
+
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* 🔹 Botón */
+.login-container button {
+    width: 100%;
+    padding: 12px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #00c6ff;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover */
+.login-container button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #0072ff, #00c6ff);
+}
+
+/* 🔹 Mensaje */
+#mensajeLogin {
+    margin-top: 15px;
+    font-size: 14px;
+    min-height: 20px;
+}
+
+/* 🔹 Responsive */
+@media (max-width: 400px) {
+    .login-container {
+        width: 90%;
+        padding: 20px;
+    }
+}
