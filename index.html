@@ -8,8 +8,6 @@
 </head>
 
 <body>
-
-    <!-- 🔝 HEADER -->
     <header>
         <h1>WebConnect</h1>
         <p>Conectando servicios digitales en un solo lugar</p>
@@ -21,9 +19,12 @@
                 <li><a href="contacto.html">Contactos</a></li>
             </ul>
         </nav>
+
+        <a href="login/formulario.html">
+            <button>Iniciar sesión / Registrarse</button>
+        </a>
     </header>
 
-<main class="contenido-principal">
 
     <section class="servicios-area">
         <div class="container">
@@ -71,32 +72,7 @@
         </div>
     </section>
 
-    <aside class="login-panel">
-        <h2>Acceso</h2>
 
-        <div id="authForms">
-            <input type="text" id="registroUsuario" placeholder="Crear usuario">
-            <input type="password" id="registroPassword" placeholder="Crear contraseña">
-            <button onclick="registrarCuenta()">Registrarse</button>
-
-            <hr>
-
-            <input type="text" id="loginUsuario" placeholder="Usuario">
-            <input type="password" id="loginPassword" placeholder="Contraseña">
-            <button onclick="iniciarSesion()">Iniciar sesión</button>
-        </div>
-
-        <div id="usuarioActivo" style="display:none;">
-            <p>Bienvenido, <span id="nombreUsuarioActivo"></span></p>
-            <button onclick="cerrarSesion()">Cerrar sesión</button>
-        </div>
-
-        <p id="mensajeAuth"></p>
-    </aside>
-
-</main>
-
-    <!-- 🔻 FOOTER -->
     <footer class="footer">
         <div class="footer-bottom">
             <p>© 2026 WebConnect - Todos los derechos reservados</p>
